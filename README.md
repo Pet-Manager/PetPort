@@ -81,7 +81,6 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
     * => Creation
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://github.com/Pet-Manager/Pet-Manager/blob/main/wireframe.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
