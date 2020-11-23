@@ -27,7 +27,10 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func onSignUp(_ sender: Any) {
+        
         let user = PFUser()
+        user["firstName"] = firstNameField.text
+        user["lastName"] = lastNameField.text
         user.username = usernameField.text
         user.password = passwordField.text
         

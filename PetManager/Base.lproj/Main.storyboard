@@ -56,7 +56,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7N-Yh-Yzg"/>
-                                    <segue destination="pOk-50-9C7" kind="presentation" id="Ts0-Ww-gO4"/>
+                                    <segue destination="H6z-sn-reM" kind="presentation" id="Ts0-Ww-gO4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,18 +179,47 @@
                         <viewLayoutGuide key="safeArea" id="i99-Sd-2Gt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HyX-Ez-NVb">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="2GI-29-Snj">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="nxg-g8-3jt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstNameField" destination="Miw-Fq-aJ9" id="mzJ-Ra-4nT"/>
                         <outlet property="lastNameField" destination="1gZ-af-Wov" id="WAI-ZJ-zRH"/>
                         <outlet property="passwordField" destination="RWB-jJ-je9" id="0v0-GC-ei2"/>
                         <outlet property="usernameField" destination="551-LC-1u0" id="cMa-cL-iCT"/>
+                        <segue destination="OG7-hB-Zb0" kind="presentation" identifier="loginSegue" id="T97-Ql-haT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s36-l1-ALc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="795"/>
+            <point key="canvasLocation" x="786.95652173913049" y="855.80357142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqM-Rd-kf5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="H6z-sn-reM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AZV-SK-PtK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pOk-50-9C7" kind="relationship" relationship="rootViewController" id="E4I-mz-T5B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhl-9f-1n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="855.80357142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="T97-Ql-haT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
