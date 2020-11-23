@@ -17,6 +17,7 @@
 		8F27D5B62569A69D00B0690B /* PetManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5B52569A69D00B0690B /* PetManagerUITests.swift */; };
 		8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F3256C442200FE196C /* LoginViewController.swift */; };
 		8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */; };
+		8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */; };
 		BBB4C3718B6979BA3EC90E0B /* Pods_PetManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372055BD77670DF9E4FC3B4F /* Pods_PetManagerTests.framework */; };
 		EE8FFE1AC08663CE3A91A688 /* Pods_PetManager_PetManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DD1C6DFCFA283B76BE9063 /* Pods_PetManager_PetManagerUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		8F27D5B72569A69D00B0690B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F58A1F3256C442200FE196C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
+		8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A8144765DE90541AB994697C /* Pods-PetManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetManager.debug.xcconfig"; path = "Target Support Files/Pods-PetManager/Pods-PetManager.debug.xcconfig"; sourceTree = "<group>"; };
 		B4FF01791E922E77178B663F /* Pods-PetManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetManager.release.xcconfig"; path = "Target Support Files/Pods-PetManager/Pods-PetManager.release.xcconfig"; sourceTree = "<group>"; };
 		CBEC08E7438C3E036A7B1C5F /* Pods-PetManager-PetManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetManager-PetManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-PetManager-PetManagerUITests/Pods-PetManager-PetManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				8F27D5932569A69C00B0690B /* AppDelegate.swift */,
 				8F27D5952569A69C00B0690B /* SceneDelegate.swift */,
 				8F27D5992569A69C00B0690B /* Main.storyboard */,
+				8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */,
 				8F58A1F3256C442200FE196C /* LoginViewController.swift */,
 				8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */,
 				8F27D59C2569A69D00B0690B /* Assets.xcassets */,
@@ -413,6 +416,7 @@
 				8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */,
 				8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,
+				8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
