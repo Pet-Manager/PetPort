@@ -76,14 +76,21 @@
         <!--Home Feed View Controller-->
         <scene sceneID="rmv-X7-AJZ">
             <objects>
-                <viewController id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2V-vs-hAG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="36G-6H-l5K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xRW-Xw-fDU"/>
+                    <navigationItem key="navigationItem" id="xRW-Xw-fDU">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="vVA-30-5nI">
+                            <connections>
+                                <action selector="onLogout:" destination="1Vs-ut-30X" id="6i4-3S-psM"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="SPa-JH-xEk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNN-hn-NM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +193,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="firstNameField" destination="Miw-Fq-aJ9" id="mzJ-Ra-4nT"/>
                         <outlet property="lastNameField" destination="1gZ-af-Wov" id="WAI-ZJ-zRH"/>
@@ -196,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s36-l1-ALc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="775"/>
+            <point key="canvasLocation" x="511.59420289855075" y="774.77678571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dqM-Rd-kf5">
@@ -218,7 +226,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xzc-Wa-65J"/>
+        <segue reference="T97-Ql-haT"/>
+        <segue reference="SPa-JH-xEk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

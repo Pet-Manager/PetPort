@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import Parse
 
 class HomeFeedViewController: UIViewController {
 
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        let currentUser = PFUser.current()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

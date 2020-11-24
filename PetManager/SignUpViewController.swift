@@ -29,11 +29,13 @@ class SignUpViewController: UIViewController {
     @IBAction func onSignUp(_ sender: Any) {
         
         let user = PFUser()
+        
         user["firstName"] = firstNameField.text
         user["lastName"] = lastNameField.text
         user.username = usernameField.text
         user.password = passwordField.text
         
+      
         user.signUpInBackground{(success, error) in
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
@@ -41,6 +43,7 @@ class SignUpViewController: UIViewController {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
+
     }
     
     /*
