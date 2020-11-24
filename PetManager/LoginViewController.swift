@@ -35,9 +35,6 @@ class LoginViewController: UIViewController {
 
     }
     
-    @IBAction func onSignUp(_ sender: Any) {
-    }
-
 
     /*
     // MARK: - Navigation

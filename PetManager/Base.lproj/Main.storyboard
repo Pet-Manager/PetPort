@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7N-Yh-Yzg"/>
                                     <segue destination="H6z-sn-reM" kind="presentation" id="Ts0-Ww-gO4"/>
                                 </connections>
                             </button>
@@ -87,7 +86,6 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="vVA-30-5nI">
                             <connections>
                                 <action selector="onLogout:" destination="1Vs-ut-30X" id="6i4-3S-psM"/>
-                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="SPa-JH-xEk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -99,7 +97,7 @@
         <!--Navigation Controller-->
         <scene sceneID="LYD-b3-PgS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="OG7-hB-Zb0" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="OG7-hB-Zb0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Su9-TM-dbA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -226,8 +224,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T97-Ql-haT"/>
-        <segue reference="SPa-JH-xEk"/>
+        <segue reference="Xzc-Wa-65J"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
