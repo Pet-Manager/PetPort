@@ -194,6 +194,10 @@
                                     <action selector="onSignUp:" destination="pOk-50-9C7" eventType="touchUpInside" id="uck-tD-bBx"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pawprint1" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-wg-TbT">
+                                <rect key="frame" x="181" y="595" width="233" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i99-Sd-2Gt"/>
                         <color key="backgroundColor" red="0.99088686699999995" green="0.9147753716" blue="0.49883341790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -245,6 +249,7 @@
         <image name="Sign In" width="96" height="42"/>
         <image name="Sign Up" width="96" height="42"/>
         <image name="Submit" width="96" height="42"/>
+        <image name="pawprint1" width="190.66667175292969" height="163.66667175292969"/>
         <image name="prints" width="103" height="217"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
