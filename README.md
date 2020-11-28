@@ -25,24 +25,31 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
 
 **Required Must-have Stories**
 
-* User can create an account
-* User can login
-* User can create a workspace for their pet(s)
-* User can track when they walked their pets
-* User can track when they feed their pets
-* User can post notes about their pets health
-* User can set up reminders to feed their pets
-* User can set up reminders to walk their pets
-* User can set up reminders to clean up their pets poop/pee
-* User can view a feed of these updates 
-* Co-owners can share the same workspace for their pets
+[x] User can create an account
+[x] User can login
+[x] User can logout
+[] User can create a workspace for their pet(s)
+[] User can track when they walked their pets
+[] User can track when they feed their pets
+[] User can post notes about their pets health
+[] User can set up reminders to feed their pets
+[] User can set up reminders to walk their pets
+[] User can set up reminders to clean up their pets poop/pee
+[] User can view a feed of these updates 
+[] Co-owners can share the same workspace for their pets
 
 **Optional Nice-to-have Stories**
 
-* Other users who care not owners of your pet can join your workspace
-* User can add other remarks to their post about their pets' walks (and also for the other ones like playing, feeding, cleaning up, etc.)
-* User can track when they play with their pets
-* User can set up a reminders to play with their pets
+[] Other users who care not owners of your pet can join your workspace
+[] User can add other remarks to their post about their pets' walks (and also for the other ones like playing, feeding, cleaning up, etc.)
+[] User can track when they play with their pets
+[] User can set up a reminders to play with their pets
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/JXKz0O2705.gif' title='Sprint 1 walkthrough' width='' alt='Sprint 1 walkthrough' />
 
 ### 2. Screen Archetypes
 
