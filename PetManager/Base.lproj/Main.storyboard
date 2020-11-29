@@ -97,7 +97,7 @@
         <!--HomeFeedViewController-->
         <scene sceneID="rmv-X7-AJZ">
             <objects>
-                <viewController title="HomeFeedViewController" id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeFeedViewController" title="HomeFeedViewController" id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2V-vs-hAG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

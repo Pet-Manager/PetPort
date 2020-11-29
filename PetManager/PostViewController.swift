@@ -36,7 +36,9 @@ class PostViewController: UIViewController {
         post.saveInBackground{ (success, error) in
             if success {
                 print("saved post")
+                // do we want the page to refresh?
                 // then switch tab control to home feed view
+                self.tabBarController?.selectedIndex = 0
             } else {
                 print("error saving post")
             }
