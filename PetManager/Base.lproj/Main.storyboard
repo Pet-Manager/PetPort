@@ -87,17 +87,17 @@
                     <connections>
                         <outlet property="passwordField" destination="jrB-H1-NMm" id="m7Y-9I-0XC"/>
                         <outlet property="usernameField" destination="BaN-uj-LA3" id="EEu-8x-yrw"/>
-                        <segue destination="OG7-hB-Zb0" kind="presentation" identifier="loginSegue" id="Xzc-Wa-65J"/>
+                        <segue destination="xEo-1S-mOD" kind="presentation" identifier="tabBarSegue" id="Hmh-Zy-lJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="77.678571428571431"/>
         </scene>
-        <!--Home Feed View Controller-->
+        <!--HomeFeedViewController-->
         <scene sceneID="rmv-X7-AJZ">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeFeedViewController" id="1Vs-ut-30X" customClass="HomeFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2V-vs-hAG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,25 +114,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNN-hn-NM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232" y="78"/>
+            <point key="canvasLocation" x="2142.0289855072465" y="77.678571428571431"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LYD-b3-PgS">
+        <!--PostViewController-->
+        <scene sceneID="Apk-hB-ykj">
             <objects>
-                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="OG7-hB-Zb0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Su9-TM-dbA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="1Vs-ut-30X" kind="relationship" relationship="rootViewController" id="lFW-CL-H0f"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JXh-Fz-jek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="PostViewController" id="zik-g8-mEZ" customClass="PostViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qU-wf-Q82">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oyH-FN-3vl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gjf-N8-WXV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSA-rn-juS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513.04347826086962" y="79.6875"/>
+            <point key="canvasLocation" x="3808.6956521739135" y="79.6875"/>
+        </scene>
+        <!--HealthFeedViewController-->
+        <scene sceneID="He0-dg-UBx">
+            <objects>
+                <viewController title="HealthFeedViewController" id="Jnh-Tm-uv8" customClass="HealthFeedViewController" customModule="PetManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wc2-Wv-EL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="In3-w4-1f1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rOY-Ea-JWf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-2S-rTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5437.68115942029" y="79.6875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2eD-dI-POD">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="xEo-1S-mOD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cwo-jy-mvh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="a7m-Ah-iOP" kind="relationship" relationship="viewControllers" id="t4E-Re-0WY"/>
+                        <segue destination="BM7-c3-rEO" kind="relationship" relationship="viewControllers" id="Qnm-MQ-QZ5"/>
+                        <segue destination="H49-bi-Mds" kind="relationship" relationship="viewControllers" id="PFW-RF-hAt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qt2-Fg-zl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="-771"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="i1F-ov-VIZ">
@@ -223,7 +256,7 @@
                         <outlet property="lastNameField" destination="1gZ-af-Wov" id="WAI-ZJ-zRH"/>
                         <outlet property="passwordField" destination="RWB-jJ-je9" id="0v0-GC-ei2"/>
                         <outlet property="usernameField" destination="551-LC-1u0" id="cMa-cL-iCT"/>
-                        <segue destination="OG7-hB-Zb0" kind="presentation" identifier="loginSegue" id="T97-Ql-haT"/>
+                        <segue destination="xEo-1S-mOD" kind="presentation" identifier="tabBarSegue" id="Zth-Hd-bAf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s36-l1-ALc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,17 +281,78 @@
             </objects>
             <point key="canvasLocation" x="-197" y="775"/>
         </scene>
+        <!--Post-->
+        <scene sceneID="2Yv-yN-8Dm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BM7-c3-rEO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Post" image="plus" catalog="system" id="sAo-7T-8Ug"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cCV-64-UaI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zik-g8-mEZ" kind="relationship" relationship="rootViewController" id="8uC-te-Oze"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytn-Vv-Or1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3063.768115942029" y="77.678571428571431"/>
+        </scene>
+        <!--Health-->
+        <scene sceneID="wr7-5c-7Xm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="H49-bi-Mds" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Health" image="heart" catalog="system" id="lzD-0w-gMe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oq7-vG-0QP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jnh-Tm-uv8" kind="relationship" relationship="rootViewController" id="hjZ-Om-43E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWP-PV-apm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4721.739130434783" y="79.6875"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fQD-zs-HLG">
+            <objects>
+                <navigationController storyboardIdentifier="HomeViewNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="a7m-Ah-iOP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="person" catalog="system" id="dOC-84-iBY"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hhk-te-7dE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pHZ-jl-ykd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Vs-ut-30X" kind="relationship" relationship="rootViewController" id="jzP-Lg-J8y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxx-6m-cjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.8840579710145" y="77.678571428571431"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T97-Ql-haT"/>
+        <segue reference="Hmh-Zy-lJX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pet Manager" width="172" height="25.5"/>
         <image name="Sign In3x" width="114" height="49"/>
         <image name="Sign Up3x" width="114" height="49"/>
         <image name="Submit" width="96" height="42"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="password_3x" width="81.666664123535156" height="16"/>
         <image name="pawprint1" width="190.66667175292969" height="163.66667175292969"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="prints" width="68.666664123535156" height="144.66667175292969"/>
         <image name="username_3x" width="85" height="12.666666984558105"/>
         <systemColor name="systemBackgroundColor">

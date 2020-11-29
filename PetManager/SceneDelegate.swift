@@ -21,8 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let homeNavigationController = main.instantiateViewController(identifier: "HomeNavigationController")
-            window?.rootViewController = homeNavigationController
+            let homeViewNavigationController = main.instantiateViewController(identifier: "HomeViewNavigationController")
+            window?.rootViewController = homeViewNavigationController
         }
     }
 
