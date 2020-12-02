@@ -9,6 +9,8 @@ import UIKit
 import Parse
 
 class HomeFeedViewController: UIViewController {
+    
+    public var didComeFromHome = false
 
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
@@ -30,7 +32,10 @@ class HomeFeedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
 
+    
+    
     /*
     // MARK: - Navigation
 

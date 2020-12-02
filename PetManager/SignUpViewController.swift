@@ -45,7 +45,7 @@ class SignUpViewController: UIViewController {
         }
 
     }
-    
+        
     /*
     // MARK: - Navigation
 
