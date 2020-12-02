@@ -10,21 +10,12 @@ import Parse
 
 class AddPetViewController: UIViewController {
     
-    var didComeFromHome : Bool!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func onAddPet(_ sender: Any) {
-        
-        if (didComeFromHome){
-            self.performSegue(withIdentifier: "homeSegue", sender: nil)
-        } 
-    }
-    
+
     
     /*
     // MARK: - Navigation

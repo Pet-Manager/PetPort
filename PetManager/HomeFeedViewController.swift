@@ -33,18 +33,8 @@ class HomeFeedViewController: UIViewController {
     }
     
     
-    @IBAction func onAddPet(_ sender: Any) {
-       didComeFromHome = true
-    }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let comeFromHome = didComeFromHome
-        let detailsViewController = segue.destination as! AddPetViewController
-        
-        detailsViewController.didComeFromHome = comeFromHome
-
-    }
+    
     
     /*
     // MARK: - Navigation
