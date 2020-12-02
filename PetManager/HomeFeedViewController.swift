@@ -9,6 +9,8 @@ import UIKit
 import Parse
 
 class HomeFeedViewController: UIViewController {
+    
+    public var didComeFromHome = false
 
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
@@ -30,7 +32,20 @@ class HomeFeedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func onAddPet(_ sender: Any) {
+       didComeFromHome = true
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let comeFromHome = didComeFromHome
+        let detailsViewController = segue.destination as! AddPetViewController
+        
+        detailsViewController.didComeFromHome = comeFromHome
+
+    }
+    
     /*
     // MARK: - Navigation
 
