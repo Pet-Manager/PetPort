@@ -67,6 +67,9 @@ class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        textView.layer.cornerRadius = 10.0
+        textView.layer.borderWidth = 1.0
+        textView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
