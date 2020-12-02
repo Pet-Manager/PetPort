@@ -269,7 +269,13 @@
                         <viewLayoutGuide key="safeArea" id="In3-w4-1f1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rOY-Ea-JWf"/>
+                    <navigationItem key="navigationItem" id="rOY-Ea-JWf">
+                        <barButtonItem key="rightBarButtonItem" title="Add Pet" id="4xt-ei-cKf">
+                            <connections>
+                                <segue destination="OKy-Ah-ErA" kind="show" id="52E-Rh-DCa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-2S-rTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -469,7 +475,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Hmh-Zy-lJX"/>
-        <segue reference="4j6-SZ-tOc"/>
+        <segue reference="52E-Rh-DCa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pet Manager" width="172" height="25.5"/>
