@@ -40,7 +40,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let image = info[.editedImage] as! UIImage
         
-        let size = CGSize(width: 100, height: 100)
+        let size = CGSize(width: 200, height: 200)
         let scaledImage = image.af_imageAspectScaled(toFit: size)
         
         imageView.image = scaledImage
@@ -51,17 +51,31 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func onAddPet(_ sender: Any) {
         
-        let post = PFObject(className: "Pets")
-        
-        post["name"] = petNameField.text
-        post["author"] = PFUser.current()!
+        let pet = PFObject(className: "Pets")
+        let user = PFUser.current()!
+   //     let objectID = user.objectId
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         
-        post["image"] = file
+        pet["image"] = file
+        pet["name"] = petNameField.text
+        pet["author"] = PFUser.current()!
         
-        post.saveInBackground{(success, error) in
+        user.add(pet, forKey: "pets")
+       
+        
+        user.saveInBackground{(success, error) in
+            if success {
+                //self.dismiss(animated: true, completion: nil)
+                print("success")
+            } else{
+                print("error")
+            }
+        }
+
+        
+        pet.saveInBackground{(success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
                 print("success")
@@ -70,6 +84,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
             }
         }
     }
+
     
     
     
