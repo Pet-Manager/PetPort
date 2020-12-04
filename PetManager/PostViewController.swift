@@ -7,8 +7,9 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //pet dummy data
     func petData() -> PFObject {
@@ -19,24 +20,56 @@ class PostViewController: UIViewController {
         return pet
     }
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func onOpenCamera(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        //check to see if camera is available
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af.imageAspectScaled(toFit: size)
+        
+        imageView.image = scaledImage
+        
+        dismiss(animated: true, completion: nil)
+
+    }
+    
     @IBOutlet weak var textView: UITextView!
     
     @IBOutlet weak var uncheckedButton: UIButton!
     
     @IBAction func onSubmitButton(_ sender: Any) {
         let post = PFObject(className: "Posts")
-        
+        let imageData = imageView.image!.pngData()
+                let file = PFFileObject(name: "image.png", data: imageData!)
+                
         post["caption"] = textView.text!
         post["isHealth"] = isHealth
         post["author"] = PFUser.current()!
         post["pet"] = petData() // after add pet, figure out how to select pet
+        post["image"] = file
         
         print("health status: \(isHealth)")
         
         post.saveInBackground{ (success, error) in
             if success {
                 print("saved post")
-                // do we want the page to refresh?
                 // then switch tab control to home feed view
                 self.tabBarController?.selectedIndex = 0
             } else {
@@ -73,6 +106,15 @@ class PostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // https://stackoverflow.com/questions/5562938/looking-to-understand-the-ios-uiviewcontroller-lifecycle
+    // call viewWillAppear to reload image and text
+    override func viewWillAppear(_ animated: Bool) {
+        let imageHolder: UIImage = UIImage(named: "post-pet-img-holder")!
+        imageView.image = imageHolder
+        
+        let placeHolderText: String = "Type your pet post here"
+        textView.text = placeHolderText
+    }
 
     /*
     // MARK: - Navigation
