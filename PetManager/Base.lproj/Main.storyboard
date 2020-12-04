@@ -248,14 +248,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-v8-xF9">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post-pet-img-holder" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-v8-xF9">
                                 <rect key="frame" x="47" y="235" width="321" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UPA-1j-Bwe" appends="YES" id="Bp9-fO-J6M"/>
+                                </connections>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Type your pet post here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NC8-d0-cFJ">
                                 <rect key="frame" x="47" y="569" width="321" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9992936254" green="0.89471477269999999" blue="0.51285904650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.89889883999999998" blue="0.48639678959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -281,11 +285,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="oeD-v8-xF9" id="S4V-ia-Pz2"/>
                         <outlet property="textView" destination="NC8-d0-cFJ" id="toy-qd-ttV"/>
                         <outlet property="uncheckedButton" destination="RAR-Fa-rEh" id="1ND-1g-BuY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSA-rn-juS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UPA-1j-Bwe">
+                    <connections>
+                        <action selector="onOpenCamera:" destination="zik-g8-mEZ" id="FbC-N3-iTv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3808.6956521739135" y="79.6875"/>
         </scene>
@@ -517,6 +527,7 @@
         <image name="pawprint1" width="190.66667175292969" height="163.66667175292969"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="post-pet-img-holder" width="321" height="321"/>
         <image name="prints" width="68.666664123535156" height="144.66667175292969"/>
         <image name="unchecked" width="40" height="40"/>
         <image name="username_3x" width="85" height="12.666666984558105"/>
