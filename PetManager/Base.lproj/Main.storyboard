@@ -159,14 +159,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-8h-mbs">
-                                <rect key="frame" x="28" y="379" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Pet"/>
-                                <connections>
-                                    <action selector="onAddPet:" destination="OKy-Ah-ErA" eventType="touchUpInside" id="3SW-ya-adO"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-7C-CKx">
                                 <rect key="frame" x="45" y="270" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,7 +176,7 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAj-rN-oBz">
-                                <rect key="frame" x="28" y="115" width="240" height="128"/>
+                                <rect key="frame" x="28" y="115" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -192,6 +184,14 @@
                                     <outletCollection property="gestureRecognizers" destination="ihp-al-sdH" appends="YES" id="S2g-zm-Ked"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-8h-mbs">
+                                <rect key="frame" x="35" y="406" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Pet"/>
+                                <connections>
+                                    <action selector="onAddPet:" destination="OKy-Ah-ErA" eventType="touchUpInside" id="3SW-ya-adO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Hu-jl-bZN"/>
                         <color key="backgroundColor" red="0.99485093359999999" green="0.91897910829999996" blue="0.46774339679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -209,7 +209,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2829" y="812"/>
+            <point key="canvasLocation" x="2828.985507246377" y="811.60714285714278"/>
         </scene>
         <!--PostViewController-->
         <scene sceneID="Apk-hB-ykj">
