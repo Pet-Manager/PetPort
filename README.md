@@ -28,14 +28,9 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
 - [x] User can create an account
 - [x] User can login
 - [x] User can logout
-- [] User can create a workspace for their pet(s)
-- [] User can track when they walked their pets
-- [] User can track when they feed their pets
-- [] User can post notes about their pets health
-- [] User can set up reminders to feed their pets
-- [] User can set up reminders to walk their pets
-- [] User can set up reminders to clean up their pets poop/pee
-- [] User can view a feed of these updates 
+- [x] User can add pets
+- [x] User can post notes about their pets
+- [] User can view a feed of these posts 
 - [] Co-owners can share the same workspace for their pets
 
 **Optional Nice-to-have Stories**
@@ -49,7 +44,12 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
 
 Here's a walkthrough of implemented user stories:
 
+# Sprint 1
 <img src='http://g.recordit.co/JXKz0O2705.gif' title='Sprint 1 walkthrough' width='' alt='Sprint 1 walkthrough' />
+
+# Spring 2
+<img src='http://g.recordit.co/Af5ZQYJzm6.gif' title='Sprint 2 walkthrough' width='' alt='Sprint 2 walkthrough' />
+
 
 ### 2. Screen Archetypes
 
