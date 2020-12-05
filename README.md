@@ -47,7 +47,7 @@ Here's a walkthrough of implemented user stories:
 # Sprint 1
 <img src='http://g.recordit.co/JXKz0O2705.gif' title='Sprint 1 walkthrough' width='' alt='Sprint 1 walkthrough' />
 
-# Spring 2
+# Sprint 2
 <img src='http://g.recordit.co/Af5ZQYJzm6.gif' title='Sprint 2 walkthrough' width='' alt='Sprint 2 walkthrough' />
 
 
