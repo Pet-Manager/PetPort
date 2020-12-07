@@ -7,11 +7,15 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
-class HomeFeedViewController: UIViewController {
+class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
     
-    public var didComeFromHome = false
-
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var pets = [PFObject]()
+    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         
@@ -28,12 +32,54 @@ class HomeFeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        //self.collectionView.reloadData()
+        
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let user = PFUser.current()
+        //let objectID = user?.objectId
+        
+        let query = PFQuery(className: "User")
+        query.getObjectInBackground(withId: user?.objectId ?? "") { (user, error) in
+            if error == nil {
+                self.pets = user!["pets"] as! [PFObject]
+                self.collectionView.reloadData()
+            } else {
+                print("failed")
+            }
+            
+        }
+        
+    }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return pets.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetCollectionViewCell", for: indexPath) as! PetCollectionViewCell
+        
+        let pet = pets[indexPath.row]
+        
+        let petImage = pet["file"] as! PFFileObject
+        let urlString = petImage.url!
+        let url = URL(string: urlString)!
+ 
+        cell.petImage.af_setImage(withURL: url)
+        
+        return cell
 
+    }
+    
     
     
     /*
@@ -45,5 +91,4 @@ class HomeFeedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

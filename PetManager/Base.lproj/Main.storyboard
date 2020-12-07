@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,11 +65,13 @@
                         <color key="backgroundColor" red="0.98902291060000003" green="0.90878289940000001" blue="0.52750241760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAB-iZ-mfX" secondAttribute="trailing" constant="269" id="1OB-Ll-KSh"/>
+                            <constraint firstItem="9wy-is-fgX" firstAttribute="leading" secondItem="okb-gX-U3P" secondAttribute="trailing" constant="64" id="1tA-S8-wzW"/>
                             <constraint firstItem="gAB-iZ-mfX" firstAttribute="top" secondItem="BaN-uj-LA3" secondAttribute="bottom" constant="53" id="2NM-Ht-8Lu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jrB-H1-NMm" secondAttribute="trailing" constant="61" id="2Rx-CE-4qh"/>
                             <constraint firstItem="GTs-pd-So4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="6RM-zW-6BV"/>
                             <constraint firstItem="jrB-H1-NMm" firstAttribute="top" secondItem="gAB-iZ-mfX" secondAttribute="bottom" constant="10" id="CkJ-r8-PbN"/>
                             <constraint firstItem="BaN-uj-LA3" firstAttribute="top" secondItem="Htj-My-xpU" secondAttribute="bottom" constant="10" id="FJn-WG-3ZH"/>
+                            <constraint firstItem="9wy-is-fgX" firstAttribute="leading" secondItem="okb-gX-U3P" secondAttribute="trailing" constant="64" id="LWb-xC-FwB"/>
                             <constraint firstItem="GTs-pd-So4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="Sdf-9W-elw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Htj-My-xpU" secondAttribute="trailing" constant="267" id="XV5-mg-dFX"/>
                             <constraint firstItem="BaN-uj-LA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="Zzp-7I-zXn"/>
@@ -102,30 +105,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-6z-Irt">
-                                <rect key="frame" x="0.0" y="220" width="414" height="593"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gPK-5z-y9K">
+                                <rect key="frame" x="0.0" y="88" width="414" height="96"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="131" id="zQS-vX-liQ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="131"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zQS-vX-liQ" id="xrm-QH-As5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Neh-Ud-zF4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mv8-Rl-h2M">
+                                    <size key="itemSize" width="91" height="84"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PetCollectionViewCell" id="pFT-78-evj" customClass="PetCollectionViewCell" customModule="PetManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.5" width="95" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Y4-8S-qPr">
+                                            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wL6-SJ-Yh7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="gRD-qY-X8J"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="K1a-1a-KVx"/>
-                            </scrollView>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-g7-ya8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="95" height="95"/>
+                                        <connections>
+                                            <outlet property="petImage" destination="1Ud-g7-ya8" id="kvt-cj-FoI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="36G-6H-l5K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPK-5z-y9K" firstAttribute="trailing" secondItem="36G-6H-l5K" secondAttribute="trailing" id="cv8-Ka-CyD"/>
+                            <constraint firstItem="gPK-5z-y9K" firstAttribute="top" secondItem="36G-6H-l5K" secondAttribute="top" id="kJi-3z-aAM"/>
+                            <constraint firstItem="gPK-5z-y9K" firstAttribute="leading" secondItem="36G-6H-l5K" secondAttribute="leading" id="wWp-gJ-fZj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xRW-Xw-fDU">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="vVA-30-5nI">
@@ -140,6 +160,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="gPK-5z-y9K" id="5sl-f1-qFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNN-hn-NM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,7 +538,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Hmh-Zy-lJX"/>
-        <segue reference="4j6-SZ-tOc"/>
+        <segue reference="VXA-bA-G8D"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pet Manager" width="172" height="25.5"/>
