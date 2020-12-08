@@ -127,7 +127,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetCollectionViewCell", for: indexPath) as! PetCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetPostCollectionViewCell", for: indexPath) as! PetPostCollectionViewCell
         
         return cell
     }
