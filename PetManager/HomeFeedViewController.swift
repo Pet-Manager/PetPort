@@ -13,6 +13,8 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
 
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var pets = [PFObject]()
         
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
@@ -27,8 +29,6 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
                 
     }
     
-    var pets = [PFObject]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

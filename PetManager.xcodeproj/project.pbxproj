@@ -16,6 +16,7 @@
 		8F27D5A02569A69D00B0690B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */; };
 		8F27D5AB2569A69D00B0690B /* PetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5AA2569A69D00B0690B /* PetManagerTests.swift */; };
 		8F27D5B62569A69D00B0690B /* PetManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5B52569A69D00B0690B /* PetManagerUITests.swift */; };
+		8F42F882257F0B2C00C0FBDF /* PetCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */; };
 		8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F3256C442200FE196C /* LoginViewController.swift */; };
 		8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */; };
 		8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */; };
@@ -60,6 +61,7 @@
 		8F27D5B12569A69D00B0690B /* PetManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F27D5B52569A69D00B0690B /* PetManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManagerUITests.swift; sourceTree = "<group>"; };
 		8F27D5B72569A69D00B0690B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionView.swift; sourceTree = "<group>"; };
 		8F58A1F3256C442200FE196C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
 		8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -146,10 +148,11 @@
 				8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */,
 				8F58A1F3256C442200FE196C /* LoginViewController.swift */,
 				8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */,
+				8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */,
+				53103F952573224600EF569C /* PostViewController.swift */,
 				8F27D59C2569A69D00B0690B /* Assets.xcassets */,
 				8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */,
 				8F27D5A12569A69D00B0690B /* Info.plist */,
-				53103F952573224600EF569C /* PostViewController.swift */,
 				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
 			);
 			path = PetManager;
@@ -428,6 +431,7 @@
 				8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */,
 				8F61CB91257DDB8D00EB17F8 /* PetCollectionViewCell.swift in Sources */,
 				8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */,
+				8F42F882257F0B2C00C0FBDF /* PetCollectionView.swift in Sources */,
 				8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */,
 				53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,

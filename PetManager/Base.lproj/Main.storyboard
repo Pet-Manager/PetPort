@@ -222,7 +222,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mYr-5D-6Fd"/>
                     <connections>
-                        <outlet property="imageView" destination="qAj-rN-oBz" id="bDX-rM-ogZ"/>
+                        <outlet property="imageView" destination="qAj-rN-oBz" id="gbE-Z9-rHb"/>
                         <outlet property="petNameField" destination="wvg-tc-bia" id="E3p-Hn-dYr"/>
                     </connections>
                 </viewController>
@@ -252,11 +252,6 @@
                                     <action selector="onSubmitButton:" destination="zik-g8-mEZ" eventType="touchUpInside" id="XoV-i1-Zjq"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vq0-mk-jHt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Lbb-Ym-3Zd"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="aaz-QM-Udi"/>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAR-Fa-rEh">
                                 <rect key="frame" x="47" y="711" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -292,14 +287,30 @@
                                 <rect key="frame" x="286" y="626" width="82" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="buB-6F-GMN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VtQ-rD-22T">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BbV-CP-TIV">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t1f-E3-y6G">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oyH-FN-3vl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="vq0-mk-jHt" secondAttribute="bottom" constant="680" id="1z4-ht-U21"/>
-                            <constraint firstItem="vq0-mk-jHt" firstAttribute="top" secondItem="oyH-FN-3vl" secondAttribute="top" id="DhP-4g-3hK"/>
-                            <constraint firstItem="vq0-mk-jHt" firstAttribute="leading" secondItem="oyH-FN-3vl" secondAttribute="leading" id="xGx-Ub-VDk"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gjf-N8-WXV">
                         <barButtonItem key="rightBarButtonItem" title="Add Pet" id="gn8-be-yoZ">
@@ -309,6 +320,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="buB-6F-GMN" id="Rr1-2p-SWv"/>
                         <outlet property="imageView" destination="oeD-v8-xF9" id="S4V-ia-Pz2"/>
                         <outlet property="textView" destination="NC8-d0-cFJ" id="toy-qd-ttV"/>
                         <outlet property="uncheckedButton" destination="RAR-Fa-rEh" id="1ND-1g-BuY"/>
@@ -539,7 +551,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Zth-Hd-bAf"/>
-        <segue reference="VXA-bA-G8D"/>
+        <segue reference="4j6-SZ-tOc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Pet Manager" width="172" height="25.5"/>

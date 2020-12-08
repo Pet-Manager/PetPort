@@ -9,8 +9,13 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var pets = [PFObject]()
+
     //pet dummy data
     func petData() -> PFObject {
         let pet = PFObject(className: "Pets")
@@ -116,6 +121,16 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         textView.text = placeHolderText
     }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return pets.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetCollectionViewCell", for: indexPath) as! PetCollectionViewCell
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 
