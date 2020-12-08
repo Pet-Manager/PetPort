@@ -9,5 +9,6 @@ import UIKit
 
 class PetCollectionViewCell: UICollectionViewCell {
      
+    @IBOutlet weak var petName: UILabel!
     @IBOutlet weak var petImage: UIImageView!
 }

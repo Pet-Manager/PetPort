@@ -13,9 +13,7 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
 
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var pets = [PFObject]()
-    
+        
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         
@@ -25,18 +23,19 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
         let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
         
         let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
-
         delegate.window?.rootViewController = loginViewController
-        
+                
     }
     
+    var pets = [PFObject]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        //self.collectionView.reloadData()
+        self.collectionView.reloadData()
         
         // Do any additional setup after loading the view.
     }
@@ -44,19 +43,35 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        
+        
         let user = PFUser.current()
         //let objectID = user?.objectId
         
-        let query = PFQuery(className: "User")
-        query.getObjectInBackground(withId: user?.objectId ?? "") { (user, error) in
+        
+        self.pets = user?["pets"] as! [PFObject]
+        self.collectionView.reloadData()
+        //print(self.pets.count)
+ 
+ 
+        
+        /**
+        
+        let query = PFUser.query()
+        query?.getObjectInBackground(withId: user?.objectId ?? "") { (user, error) in
             if error == nil {
                 self.pets = user!["pets"] as! [PFObject]
                 self.collectionView.reloadData()
+                print(self.pets.count)
             } else {
                 print("failed")
             }
+ 
+            
             
         }
+ 
+ */
         
     }
     
@@ -70,15 +85,39 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
         
         let pet = pets[indexPath.row]
         
+        pet.fetchInBackground{(pet, error) in
+            if error == nil {
+                let name = pet?["name"] as? String
+                //print(name!)
+                cell.petName.text = name
+            } else {
+                print("name: failed")
+            }
+        }
+        
+        pet.fetchInBackground{(pet, error) in
+            if error == nil {
+                let petImage = pet?["image"] as! PFFileObject
+                let urlString = petImage.url!
+                let url = URL(string: urlString)!
+         
+                cell.petImage.af_setImage(withURL: url)
+            } else {
+                print("file: failed")
+            }
+        }
+        
+        /**
         let petImage = pet["file"] as! PFFileObject
         let urlString = petImage.url!
         let url = URL(string: urlString)!
  
         cell.petImage.af_setImage(withURL: url)
-        
+        */
         return cell
 
     }
+    
     
     
     
