@@ -150,10 +150,10 @@
 				8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */,
 				8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */,
 				53103F952573224600EF569C /* PostViewController.swift */,
+				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
 				8F27D59C2569A69D00B0690B /* Assets.xcassets */,
 				8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */,
 				8F27D5A12569A69D00B0690B /* Info.plist */,
-				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
 			);
 			path = PetManager;
 			sourceTree = "<group>";
