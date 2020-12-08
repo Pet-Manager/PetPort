@@ -1,19 +1,20 @@
 //
-//  AddPetViewController.swift
+//  AddFirstPetViewController.swift
 //  PetManager
 //
-//  Created by Yihui Liao on 12/1/20.
+//  Created by Yihui Liao on 12/8/20.
 //
 
 import UIKit
 import Parse
 import AlamofireImage
 
-class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddFirstPetViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    
+    @IBOutlet weak var petName: UITextField!
     
     @IBOutlet weak var imageView: UIImageView!
-    
-    @IBOutlet weak var petNameField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,9 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         imageView.layer.borderColor = UIColor.black.cgColor
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
- 
+
         // Do any additional setup after loading the view.
     }
-
     
     @IBAction func addImage(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -56,7 +56,6 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func onAddPet(_ sender: Any) {
-        
         let pet = PFObject(className: "Pets")
         let user = PFUser.current()!
    //     let objectID = user.objectId
@@ -65,7 +64,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         let file = PFFileObject(data: imageData!)
         
         pet["image"] = file
-        pet["name"] = petNameField.text
+        pet["name"] = petName.text
         pet["author"] = PFUser.current()!
         
         user.add(pet, forKey: "pets")
@@ -89,11 +88,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
                 print("error")
             }
         }
-        
     }
-
-
-    
     /*
     // MARK: - Navigation
 

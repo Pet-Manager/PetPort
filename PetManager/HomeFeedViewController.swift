@@ -48,8 +48,11 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
         let user = PFUser.current()
         //let objectID = user?.objectId
         
+        //(post["comments"] as? [PFObject]) ?? []
         
-        self.pets = user?["pets"] as! [PFObject]
+        
+        self.pets = (user?["pets"] as? [PFObject]) ?? []
+        //self.pets = user?["pets"] as! [PFObject]
         self.collectionView.reloadData()
         //print(self.pets.count)
  

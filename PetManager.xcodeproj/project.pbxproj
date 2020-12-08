@@ -19,6 +19,8 @@
 		8F42F882257F0B2C00C0FBDF /* PetCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */; };
 		8F42F89B257F109A00C0FBDF /* PetPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */; };
 		8F42F8A3257F10F700C0FBDF /* PetHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F8A2257F10F700C0FBDF /* PetHealthCollectionViewCell.swift */; };
+		8F510890258002DC00B1F819 /* AddFirstPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */; };
+		8F5108942580068900B1F819 /* FontsFree-Net-HoboStd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */; };
 		8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F3256C442200FE196C /* LoginViewController.swift */; };
 		8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */; };
 		8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */; };
@@ -66,6 +68,8 @@
 		8F42F881257F0B2C00C0FBDF /* PetCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionView.swift; sourceTree = "<group>"; };
 		8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F42F8A2257F10F700C0FBDF /* PetHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-HoboStd.ttf"; path = "../../../Downloads/FontsFree-Net-HoboStd.ttf"; sourceTree = "<group>"; };
+		8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFirstPetViewController.swift; sourceTree = "<group>"; };
 		8F58A1F3256C442200FE196C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
 		8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -157,9 +161,11 @@
 				8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */,
 				53103F952573224600EF569C /* PostViewController.swift */,
 				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
+				8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */,
 				8F27D59C2569A69D00B0690B /* Assets.xcassets */,
 				8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */,
 				8F27D5A12569A69D00B0690B /* Info.plist */,
+				8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */,
 			);
 			path = PetManager;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8FBCC8257734A10046000C /* Main.storyboard in Resources */,
+				8F5108942580068900B1F819 /* FontsFree-Net-HoboStd.ttf in Resources */,
 				8F27D5A02569A69D00B0690B /* LaunchScreen.storyboard in Resources */,
 				8F27D59D2569A69D00B0690B /* Assets.xcassets in Resources */,
 			);
@@ -442,6 +449,7 @@
 				8F42F8A3257F10F700C0FBDF /* PetHealthCollectionViewCell.swift in Sources */,
 				8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */,
 				53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */,
+				8F510890258002DC00B1F819 /* AddFirstPetViewController.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,
 				8F8FBCBC2577096B0046000C /* AddPetViewController.swift in Sources */,
 				8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */,
