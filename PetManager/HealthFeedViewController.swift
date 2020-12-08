@@ -29,7 +29,7 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         super.viewDidAppear(animated)
         
         let user = PFUser.current()
-        self.pets = user?["pets"] as! [PFObject]
+        self.pets = (user?["pets"] as? [PFObject]) ?? []
         self.collectionView.reloadData()
     }
     

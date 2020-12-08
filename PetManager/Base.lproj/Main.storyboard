@@ -421,83 +421,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="first name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-lX-Oyf">
-                                <rect key="frame" x="71" y="288" width="94" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-lX-Oyf">
+                                <rect key="frame" x="62" y="288" width="94" height="19"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
                                 <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="last name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-ea-wnQ">
-                                <rect key="frame" x="71" y="381" width="89" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-ea-wnQ">
+                                <rect key="frame" x="62" y="381" width="89" height="19"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
                                 <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afb-WC-fRP">
-                                <rect key="frame" x="71" y="468" width="91" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afb-WC-fRP">
+                                <rect key="frame" x="62" y="474" width="91" height="19"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
                                 <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-5x-8vb">
-                                <rect key="frame" x="71" y="556" width="88" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
-                                <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Miw-Fq-aJ9">
-                                <rect key="frame" x="71" y="315" width="268" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Miw-Fq-aJ9">
+                                <rect key="frame" x="61" y="317" width="292" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-af-Wov">
-                                <rect key="frame" x="71" y="410" width="268" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gZ-af-Wov">
+                                <rect key="frame" x="61" y="410" width="292" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="551-LC-1u0">
-                                <rect key="frame" x="71" y="495" width="268" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="551-LC-1u0">
+                                <rect key="frame" x="61" y="503" width="292" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-jJ-je9">
-                                <rect key="frame" x="71" y="591" width="268" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoH-43-aXb">
-                                <rect key="frame" x="69" y="144" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="30"/>
-                                <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="please fill out the following information to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmn-d9-CG5">
-                                <rect key="frame" x="69" y="197" width="307" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="17"/>
-                                <color key="textColor" red="0.6413355427157359" green="0.47022667123416106" blue="0.30052655990612898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGC-GY-5qt">
-                                <rect key="frame" x="67" y="680" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGC-GY-5qt">
+                                <rect key="frame" x="62" y="680" width="96" height="42"/>
                                 <state key="normal" image="Submit"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="pOk-50-9C7" eventType="touchUpInside" id="uck-tD-bBx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-jJ-je9">
+                                <rect key="frame" x="61" y="596" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoH-43-aXb">
+                                <rect key="frame" x="61" y="144" width="106" height="30"/>
+                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="30"/>
+                                <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please fill out the following information to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmn-d9-CG5">
+                                <rect key="frame" x="61" y="197" width="307" height="34"/>
+                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="17"/>
+                                <color key="textColor" red="0.6413355427157359" green="0.47022667123416106" blue="0.30052655990612898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-5x-8vb">
+                                <rect key="frame" x="62" y="567" width="88" height="19"/>
+                                <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
+                                <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i99-Sd-2Gt"/>
                         <color key="backgroundColor" red="0.99088686699999995" green="0.9147753716" blue="0.49883341790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1gZ-af-Wov" firstAttribute="top" secondItem="eM5-ea-wnQ" secondAttribute="bottom" constant="10" id="1bP-aM-G96"/>
+                            <constraint firstItem="1gZ-af-Wov" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="2lO-nO-hxQ"/>
+                            <constraint firstItem="afb-WC-fRP" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="62" id="4Xu-o0-XUO"/>
+                            <constraint firstItem="Miw-Fq-aJ9" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="516-Y6-d0I"/>
+                            <constraint firstItem="JoH-43-aXb" firstAttribute="top" secondItem="i99-Sd-2Gt" secondAttribute="top" constant="56" id="5eO-EQ-0Ei"/>
+                            <constraint firstItem="afb-WC-fRP" firstAttribute="top" secondItem="1gZ-af-Wov" secondAttribute="bottom" constant="30" id="6HD-cJ-j0B"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="8t5-lX-Oyf" secondAttribute="trailing" constant="258" id="9du-0F-Scg"/>
+                            <constraint firstItem="JOg-5x-8vb" firstAttribute="top" secondItem="551-LC-1u0" secondAttribute="bottom" constant="30" id="9on-7d-Pn9"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="JOg-5x-8vb" secondAttribute="trailing" constant="264" id="BdF-94-QqQ"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="eM5-ea-wnQ" secondAttribute="trailing" constant="263" id="Gc4-RY-rAq"/>
+                            <constraint firstItem="eM5-ea-wnQ" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="62" id="IwX-Fd-Oxp"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="1gZ-af-Wov" secondAttribute="trailing" constant="61" id="JUx-vh-xL8"/>
+                            <constraint firstItem="RWB-jJ-je9" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="JtV-yv-W9y"/>
+                            <constraint firstItem="DGC-GY-5qt" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="62" id="SdO-c0-Cbu"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="afb-WC-fRP" secondAttribute="trailing" constant="261" id="VHy-Be-7Ry"/>
+                            <constraint firstItem="eM5-ea-wnQ" firstAttribute="top" secondItem="Miw-Fq-aJ9" secondAttribute="bottom" constant="30" id="XpL-jC-f0j"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="Miw-Fq-aJ9" secondAttribute="trailing" constant="61" id="Ysb-uN-XGH"/>
+                            <constraint firstItem="551-LC-1u0" firstAttribute="top" secondItem="afb-WC-fRP" secondAttribute="bottom" constant="10" id="Zyb-8Q-IhX"/>
+                            <constraint firstItem="cmn-d9-CG5" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="aak-za-RfO"/>
+                            <constraint firstItem="cmn-d9-CG5" firstAttribute="top" secondItem="JoH-43-aXb" secondAttribute="bottom" constant="23" id="cyI-uA-inW"/>
+                            <constraint firstItem="8t5-lX-Oyf" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="62" id="dxv-Ct-7jd"/>
+                            <constraint firstItem="cmn-d9-CG5" firstAttribute="top" secondItem="JoH-43-aXb" secondAttribute="bottom" constant="23" id="eO0-9k-iPW"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="cmn-d9-CG5" secondAttribute="trailing" constant="46" id="eeb-tX-qaE"/>
+                            <constraint firstItem="JOg-5x-8vb" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="62" id="gJL-4v-OzR"/>
+                            <constraint firstItem="JoH-43-aXb" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="hSh-Fz-4My"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="RWB-jJ-je9" secondAttribute="trailing" constant="61" id="k2Y-zj-PmS"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="JoH-43-aXb" secondAttribute="trailing" constant="247" id="mNJ-gy-qtV"/>
+                            <constraint firstItem="Miw-Fq-aJ9" firstAttribute="top" secondItem="8t5-lX-Oyf" secondAttribute="bottom" constant="10" id="oRS-9x-Zv8"/>
+                            <constraint firstItem="i99-Sd-2Gt" firstAttribute="trailing" secondItem="551-LC-1u0" secondAttribute="trailing" constant="61" id="tVg-AG-F5f"/>
+                            <constraint firstItem="551-LC-1u0" firstAttribute="leading" secondItem="i99-Sd-2Gt" secondAttribute="leading" constant="61" id="vJc-V5-XbB"/>
+                            <constraint firstItem="DGC-GY-5qt" firstAttribute="top" secondItem="RWB-jJ-je9" secondAttribute="bottom" constant="50" id="wnn-To-KKb"/>
+                            <constraint firstItem="RWB-jJ-je9" firstAttribute="top" secondItem="JOg-5x-8vb" secondAttribute="bottom" constant="10" id="xW5-I7-EgV"/>
+                            <constraint firstItem="8t5-lX-Oyf" firstAttribute="top" secondItem="cmn-d9-CG5" secondAttribute="bottom" constant="57" id="yjg-sF-9ug"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HyX-Ez-NVb">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="2GI-29-Snj">
@@ -574,7 +598,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1974" y="1020"/>
+            <point key="canvasLocation" x="-197" y="1813"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dqM-Rd-kf5">
