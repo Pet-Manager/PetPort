@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BaN-uj-LA3">
-                                <rect key="frame" x="61" y="284" width="292" height="34"/>
+                                <rect key="frame" x="61" y="287.5" width="292" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrB-H1-NMm">
-                                <rect key="frame" x="61" y="399" width="292" height="34"/>
+                                <rect key="frame" x="61" y="406" width="292" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okb-gX-U3P">
-                                <rect key="frame" x="61" y="503.5" width="114" height="49"/>
+                                <rect key="frame" x="61" y="510.5" width="114" height="49"/>
                                 <state key="normal" image="Sign In3x">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wy-is-fgX">
-                                <rect key="frame" x="239" y="503.5" width="114" height="49"/>
+                                <rect key="frame" x="239" y="510.5" width="114" height="49"/>
                                 <state key="normal" image="Sign Up3x">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -60,13 +60,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hG-g9-u5c">
-                                <rect key="frame" x="62" y="255" width="91" height="19"/>
+                                <rect key="frame" x="62" y="255" width="91" height="22.5"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
                                 <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0s-cU-Ylp">
-                                <rect key="frame" x="62" y="370" width="88" height="19"/>
+                                <rect key="frame" x="62" y="373.5" width="88" height="22.5"/>
                                 <fontDescription key="fontDescription" name="HoboStd" family="Hobo Std" pointSize="19"/>
                                 <color key="textColor" red="0.49722069499999999" green="0.3619616926" blue="0.22927463049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -575,7 +575,7 @@
                         <outlet property="lastNameField" destination="1gZ-af-Wov" id="WAI-ZJ-zRH"/>
                         <outlet property="passwordField" destination="RWB-jJ-je9" id="0v0-GC-ei2"/>
                         <outlet property="usernameField" destination="551-LC-1u0" id="cMa-cL-iCT"/>
-                        <segue destination="a7m-Ah-iOP" kind="presentation" identifier="homeSegue" modalPresentationStyle="fullScreen" id="elA-Qf-z5y"/>
+                        <segue destination="xEo-1S-mOD" kind="presentation" identifier="tabBarSegue" id="haq-rL-9IQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s36-l1-ALc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -717,7 +717,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t4E-Re-0WY"/>
+        <segue reference="haq-rL-9IQ"/>
         <segue reference="VXA-bA-G8D"/>
     </inferredMetricsTieBreakers>
     <resources>
