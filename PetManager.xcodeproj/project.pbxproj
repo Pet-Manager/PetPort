@@ -10,6 +10,8 @@
 		4734D16B52D18DACA713A466 /* Pods_PetManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6281A9AC8366D5F1435CFE /* Pods_PetManager.framework */; };
 		53103F962573224600EF569C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53103F952573224600EF569C /* PostViewController.swift */; };
 		53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53103F9A2573225A00EF569C /* HealthFeedViewController.swift */; };
+		53DBEF15257EDE0E00440E75 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DBEF14257EDE0E00440E75 /* PostCell.swift */; };
+		53DBEF1A257F455200440E75 /* PostWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DBEF19257F455200440E75 /* PostWithImageCell.swift */; };
 		8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5932569A69C00B0690B /* AppDelegate.swift */; };
 		8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5952569A69C00B0690B /* SceneDelegate.swift */; };
 		8F27D59D2569A69D00B0690B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F27D59C2569A69D00B0690B /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		372055BD77670DF9E4FC3B4F /* Pods_PetManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53103F952573224600EF569C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		53103F9A2573225A00EF569C /* HealthFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFeedViewController.swift; sourceTree = "<group>"; };
+		53DBEF14257EDE0E00440E75 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		53DBEF19257F455200440E75 /* PostWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWithImageCell.swift; sourceTree = "<group>"; };
 		74DD1C6DFCFA283B76BE9063 /* Pods_PetManager_PetManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetManager_PetManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F27D5902569A69C00B0690B /* PetManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F27D5932569A69C00B0690B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				8F27D5A12569A69D00B0690B /* Info.plist */,
 				53103F952573224600EF569C /* PostViewController.swift */,
 				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
+				53DBEF14257EDE0E00440E75 /* PostCell.swift */,
+				53DBEF19257F455200440E75 /* PostWithImageCell.swift */,
 			);
 			path = PetManager;
 			sourceTree = "<group>";
@@ -426,6 +432,8 @@
 				8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */,
 				8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */,
 				53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */,
+				53DBEF1A257F455200440E75 /* PostWithImageCell.swift in Sources */,
+				53DBEF15257EDE0E00440E75 /* PostCell.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,
 				8F8FBCBC2577096B0046000C /* AddPetViewController.swift in Sources */,
 				8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */,
