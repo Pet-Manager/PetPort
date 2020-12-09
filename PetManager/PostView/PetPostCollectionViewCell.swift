@@ -9,4 +9,7 @@ import UIKit
 
 class PetPostCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var petImage: UIImageView!
+    
+    @IBOutlet weak var petName: UILabel!
 }

@@ -41,6 +41,7 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetHealthCollectionViewCell", for: indexPath) as! PetHealthCollectionViewCell
         
+     
         return cell
     }
     
