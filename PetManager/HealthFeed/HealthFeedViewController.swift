@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -41,6 +42,29 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetHealthCollectionViewCell", for: indexPath) as! PetHealthCollectionViewCell
         
+        let pet = pets[indexPath.row]
+        
+        pet.fetchInBackground{(pet, error) in
+            if error == nil {
+                let name = pet?["name"] as? String
+                //print(name!)
+                cell.petName.text = name
+            } else {
+                print("name: failed")
+            }
+        }
+        
+        pet.fetchInBackground{(pet, error) in
+            if error == nil {
+                let petImage = pet?["image"] as! PFFileObject
+                let urlString = petImage.url!
+                let url = URL(string: urlString)!
+         
+                cell.petImage.af_setImage(withURL: url)
+            } else {
+                print("file: failed")
+            }
+        }
      
         return cell
     }
