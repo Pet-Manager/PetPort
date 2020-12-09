@@ -18,11 +18,14 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /**
         imageView.layer.borderWidth = 1
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.black.cgColor
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
+ 
+         */
  
         // Do any additional setup after loading the view.
     }
@@ -46,7 +49,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let image = info[.editedImage] as! UIImage
         
-        let size = CGSize(width: 200, height: 200)
+        let size = CGSize(width: 100, height: 100)
         let scaledImage = image.af_imageAspectScaled(toFit: size)
         
         imageView.image = scaledImage
