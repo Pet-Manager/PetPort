@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
       
         user.signUpInBackground{(success, error) in
             if success {
-                self.performSegue(withIdentifier: "tabBarSegue", sender: nil)
+                self.performSegue(withIdentifier: "homeSegue", sender: nil)
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }

@@ -16,9 +16,14 @@
 		8F27D5A02569A69D00B0690B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */; };
 		8F27D5AB2569A69D00B0690B /* PetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5AA2569A69D00B0690B /* PetManagerTests.swift */; };
 		8F27D5B62569A69D00B0690B /* PetManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5B52569A69D00B0690B /* PetManagerUITests.swift */; };
+		8F32450E258158E100B04B75 /* PetHealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F32450D258158E100B04B75 /* PetHealthCollectionViewCell.swift */; };
+		8F42F89B257F109A00C0FBDF /* PetPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */; };
+		8F510890258002DC00B1F819 /* AddFirstPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */; };
+		8F5108942580068900B1F819 /* FontsFree-Net-HoboStd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */; };
 		8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F3256C442200FE196C /* LoginViewController.swift */; };
 		8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */; };
 		8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */; };
+		8F61CB91257DDB8D00EB17F8 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61CB90257DDB8D00EB17F8 /* PetCollectionViewCell.swift */; };
 		8F8FBCBC2577096B0046000C /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FBCBB2577096B0046000C /* AddPetViewController.swift */; };
 		8F8FBCC8257734A10046000C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8FBCC6257734A10046000C /* Main.storyboard */; };
 		BBB4C3718B6979BA3EC90E0B /* Pods_PetManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372055BD77670DF9E4FC3B4F /* Pods_PetManagerTests.framework */; };
@@ -59,9 +64,14 @@
 		8F27D5B12569A69D00B0690B /* PetManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F27D5B52569A69D00B0690B /* PetManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManagerUITests.swift; sourceTree = "<group>"; };
 		8F27D5B72569A69D00B0690B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F32450D258158E100B04B75 /* PetHealthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FontsFree-Net-HoboStd.ttf"; path = "../../../Downloads/FontsFree-Net-HoboStd.ttf"; sourceTree = "<group>"; };
+		8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFirstPetViewController.swift; sourceTree = "<group>"; };
 		8F58A1F3256C442200FE196C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
 		8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8F61CB90257DDB8D00EB17F8 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
 		8F8FBCBB2577096B0046000C /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		8F8FBCC7257734A10046000C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8144765DE90541AB994697C /* Pods-PetManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetManager.debug.xcconfig"; path = "Target Support Files/Pods-PetManager/Pods-PetManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,12 +152,14 @@
 				8F8FBCBB2577096B0046000C /* AddPetViewController.swift */,
 				8F58A1FD256C4A9A00FE196C /* SignUpViewController.swift */,
 				8F58A1F3256C442200FE196C /* LoginViewController.swift */,
-				8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */,
+				8F3244F72581546800B04B75 /* HomeFeed */,
+				8F3244F82581547C00B04B75 /* PostView */,
+				8F3244FA258154AF00B04B75 /* HealthFeed */,
+				8F51088B257FF86D00B1F819 /* FontsFree-Net-HoboStd.ttf */,
 				8F27D59C2569A69D00B0690B /* Assets.xcassets */,
 				8F27D59E2569A69D00B0690B /* LaunchScreen.storyboard */,
 				8F27D5A12569A69D00B0690B /* Info.plist */,
-				53103F952573224600EF569C /* PostViewController.swift */,
-				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
+				8F51088F258002DC00B1F819 /* AddFirstPetViewController.swift */,
 			);
 			path = PetManager;
 			sourceTree = "<group>";
@@ -168,6 +180,33 @@
 				8F27D5B72569A69D00B0690B /* Info.plist */,
 			);
 			path = PetManagerUITests;
+			sourceTree = "<group>";
+		};
+		8F3244F72581546800B04B75 /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				8F58A1F8256C443500FE196C /* HomeFeedViewController.swift */,
+				8F61CB90257DDB8D00EB17F8 /* PetCollectionViewCell.swift */,
+			);
+			path = HomeFeed;
+			sourceTree = "<group>";
+		};
+		8F3244F82581547C00B04B75 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				53103F952573224600EF569C /* PostViewController.swift */,
+				8F42F89A257F109A00C0FBDF /* PetPostCollectionViewCell.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
+		8F3244FA258154AF00B04B75 /* HealthFeed */ = {
+			isa = PBXGroup;
+			children = (
+				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
+				8F32450D258158E100B04B75 /* PetHealthCollectionViewCell.swift */,
+			);
+			path = HealthFeed;
 			sourceTree = "<group>";
 		};
 		94270A42F1B25E6599B0C534 /* Pods */ = {
@@ -292,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8FBCC8257734A10046000C /* Main.storyboard in Resources */,
+				8F5108942580068900B1F819 /* FontsFree-Net-HoboStd.ttf in Resources */,
 				8F27D5A02569A69D00B0690B /* LaunchScreen.storyboard in Resources */,
 				8F27D59D2569A69D00B0690B /* Assets.xcassets in Resources */,
 			);
@@ -422,10 +462,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				53103F962573224600EF569C /* PostViewController.swift in Sources */,
+				8F42F89B257F109A00C0FBDF /* PetPostCollectionViewCell.swift in Sources */,
 				8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */,
+				8F61CB91257DDB8D00EB17F8 /* PetCollectionViewCell.swift in Sources */,
 				8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */,
 				8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */,
+				8F32450E258158E100B04B75 /* PetHealthCollectionViewCell.swift in Sources */,
 				53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */,
+				8F510890258002DC00B1F819 /* AddFirstPetViewController.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,
 				8F8FBCBC2577096B0046000C /* AddPetViewController.swift in Sources */,
 				8F58A1FE256C4A9A00FE196C /* SignUpViewController.swift in Sources */,
