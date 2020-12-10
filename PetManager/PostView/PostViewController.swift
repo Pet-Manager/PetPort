@@ -16,15 +16,6 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     var pets = [PFObject]()
 
-    //pet dummy data
-    func petData() -> PFObject {
-        let pet = PFObject(className: "Pets")
-        pet["name"] = "Douglas"
-        pet["author"] = PFUser.current()!
-        
-        return pet
-    }
-
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func onOpenCamera(_ sender: Any) {
@@ -67,7 +58,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         post["caption"] = textView.text!
         post["isHealth"] = isHealth
         post["author"] = PFUser.current()!
-        post["pet"] = petData() // after add pet, figure out how to select pet
+//        post["pet"] = petData() // after add pet, figure out how to select pet
+        // took out dummy data
         post["image"] = file
         
         print("health status: \(isHealth)")
