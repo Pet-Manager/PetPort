@@ -156,7 +156,7 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
             cell.userLabel.text = user.username
             cell.captionLabel.text = post["caption"] as? String
-            cell.createdAtLabel.text = post["createdAt"] as? String
+//            cell.createdAtLabel.text = post["createdAt"] as? String
             
             return cell
         } else {
