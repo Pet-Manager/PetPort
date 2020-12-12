@@ -11,6 +11,8 @@
 		53103F962573224600EF569C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53103F952573224600EF569C /* PostViewController.swift */; };
 		53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53103F9A2573225A00EF569C /* HealthFeedViewController.swift */; };
 		53AFA1C525829CC000468344 /* PostWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFA1C425829CC000468344 /* PostWithImageCell.swift */; };
+		53AFA1E22584A01600468344 /* HealthPostWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFA1E12584A01600468344 /* HealthPostWithImageCell.swift */; };
+		53AFA1E72584A0F900468344 /* HealthPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFA1E62584A0F900468344 /* HealthPostCell.swift */; };
 		53EED4522581B338006ACC3B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EED4512581B338006ACC3B /* PostCell.swift */; };
 		8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5932569A69C00B0690B /* AppDelegate.swift */; };
 		8F27D5962569A69C00B0690B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D5952569A69C00B0690B /* SceneDelegate.swift */; };
@@ -54,6 +56,8 @@
 		53103F952573224600EF569C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		53103F9A2573225A00EF569C /* HealthFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthFeedViewController.swift; sourceTree = "<group>"; };
 		53AFA1C425829CC000468344 /* PostWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWithImageCell.swift; sourceTree = "<group>"; };
+		53AFA1E12584A01600468344 /* HealthPostWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPostWithImageCell.swift; sourceTree = "<group>"; };
+		53AFA1E62584A0F900468344 /* HealthPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPostCell.swift; sourceTree = "<group>"; };
 		53EED4512581B338006ACC3B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		74DD1C6DFCFA283B76BE9063 /* Pods_PetManager_PetManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetManager_PetManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F27D5902569A69C00B0690B /* PetManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +215,8 @@
 			children = (
 				53103F9A2573225A00EF569C /* HealthFeedViewController.swift */,
 				8F32450D258158E100B04B75 /* PetHealthCollectionViewCell.swift */,
+				53AFA1E12584A01600468344 /* HealthPostWithImageCell.swift */,
+				53AFA1E62584A0F900468344 /* HealthPostCell.swift */,
 			);
 			path = HealthFeed;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				53103F962573224600EF569C /* PostViewController.swift in Sources */,
 				8F42F89B257F109A00C0FBDF /* PetPostCollectionViewCell.swift in Sources */,
 				53EED4522581B338006ACC3B /* PostCell.swift in Sources */,
+				53AFA1E22584A01600468344 /* HealthPostWithImageCell.swift in Sources */,
 				8F58A1F4256C442200FE196C /* LoginViewController.swift in Sources */,
 				8F61CB91257DDB8D00EB17F8 /* PetCollectionViewCell.swift in Sources */,
 				8F27D5942569A69C00B0690B /* AppDelegate.swift in Sources */,
@@ -477,6 +484,7 @@
 				8F32450E258158E100B04B75 /* PetHealthCollectionViewCell.swift in Sources */,
 				53103F9B2573225A00EF569C /* HealthFeedViewController.swift in Sources */,
 				8F510890258002DC00B1F819 /* AddFirstPetViewController.swift in Sources */,
+				53AFA1E72584A0F900468344 /* HealthPostCell.swift in Sources */,
 				8F58A1F9256C443500FE196C /* HomeFeedViewController.swift in Sources */,
 				53AFA1C525829CC000468344 /* PostWithImageCell.swift in Sources */,
 				8F8FBCBC2577096B0046000C /* AddPetViewController.swift in Sources */,

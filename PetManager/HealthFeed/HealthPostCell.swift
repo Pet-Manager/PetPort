@@ -1,24 +1,21 @@
 //
-//  PostWithImageCell.swift
+//  HealthPostCell.swift
 //  PetManager
 //
-//  Created by Diane Nguyen on 12/10/20.
+//  Created by Diane Nguyen on 12/11/20.
 //
 
 import UIKit
 
-class PostWithImageCell: UITableViewCell {
+class HealthPostCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
     @IBOutlet weak var petNameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    @IBOutlet weak var createdAtLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var userLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
