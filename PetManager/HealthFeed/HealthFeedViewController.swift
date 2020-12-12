@@ -34,9 +34,10 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         super.viewDidAppear(animated)
         let query = PFQuery(className:"Posts")
         query.includeKeys(["author","pet"]) // fetch actual object
+        query.whereKey("isHealth", equalTo:true)
         query.limit = 10
         query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
+            if posts != nil{
                 self.posts = posts!
                 self.tableView.reloadData()
             }
@@ -99,25 +100,6 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         let imageData = try! Data(contentsOf: url)
         let image = UIImage(data: imageData)!
         
-//        // if true, then no image uploaded in post
-//        if isEqualImage(image){
-//            // display post without image on home feed
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostCell") as! HealthPostCell
-//            cell.userLabel.text = user.username
-//            cell.captionLabel.text = post["caption"] as? String
-////            cell.createdAtLabel.text = post["createdAt"] as? String
-//
-//            return cell
-//        } else {
-//            // there is an image
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostWithImageCell") as! HealthPostWithImageCell
-//            cell.userLabel.text = user.username
-//            cell.captionLabel.text = post["caption"] as? String
-////            cell.createdAtLabel.text = post["createdAt"] as? String
-//            cell.photoView.af.setImage(withURL: url)
-//
-//            return cell
-//        }
         
         // if true, then no image uploaded in post
         if isEqualImage(image){
@@ -126,7 +108,6 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.userLabel.text = user.username
             cell.captionLabel.text = post["caption"] as? String
 //            cell.createdAtLabel.text = post["createdAt"] as? String
-            
             return cell
         } else {
             // there is an image
@@ -135,7 +116,6 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.captionLabel.text = post["caption"] as? String
 //            cell.createdAtLabel.text = post["createdAt"] as? String
             cell.photoView.af.setImage(withURL: url)
-            
             return cell
         }
     }
