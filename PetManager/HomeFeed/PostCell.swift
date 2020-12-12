@@ -15,9 +15,7 @@ class PostCell: UITableViewCell {
     }
 
     @IBOutlet weak var petNameLabel: UILabel!
-    @IBOutlet weak var petProfileView: UIImageView!
     @IBOutlet weak var captionLabel: UILabel!
-    @IBOutlet weak var createdAtLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
     
     override func setSelected(_ selected: Bool, animated: Bool) {

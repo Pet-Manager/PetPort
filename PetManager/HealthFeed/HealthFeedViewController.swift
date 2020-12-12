@@ -9,18 +9,22 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     var pets = [PFObject]()
+    var posts = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         self.collectionView.reloadData()
 
         // Do any additional setup after loading the view.
@@ -28,6 +32,15 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let query = PFQuery(className:"Posts")
+        query.includeKeys(["author","pet"]) // fetch actual object
+        query.limit = 10
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+        }
         
         let user = PFUser.current()
         self.pets = (user?["pets"] as? [PFObject]) ?? []
@@ -69,6 +82,71 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        
+        // check to see if user has uploaded picture in post
+        let post = posts[indexPath.row]
+        let user = post["author"] as! PFUser
+        let imageFile = post["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        let imageData = try! Data(contentsOf: url)
+        let image = UIImage(data: imageData)!
+        
+//        // if true, then no image uploaded in post
+//        if isEqualImage(image){
+//            // display post without image on home feed
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostCell") as! HealthPostCell
+//            cell.userLabel.text = user.username
+//            cell.captionLabel.text = post["caption"] as? String
+////            cell.createdAtLabel.text = post["createdAt"] as? String
+//
+//            return cell
+//        } else {
+//            // there is an image
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostWithImageCell") as! HealthPostWithImageCell
+//            cell.userLabel.text = user.username
+//            cell.captionLabel.text = post["caption"] as? String
+////            cell.createdAtLabel.text = post["createdAt"] as? String
+//            cell.photoView.af.setImage(withURL: url)
+//
+//            return cell
+//        }
+        
+        // if true, then no image uploaded in post
+        if isEqualImage(image){
+            // display post without image on home feed
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostCell") as! HealthPostCell
+            cell.userLabel.text = user.username
+            cell.captionLabel.text = post["caption"] as? String
+//            cell.createdAtLabel.text = post["createdAt"] as? String
+            
+            return cell
+        } else {
+            // there is an image
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HealthPostWithImageCell") as! HealthPostWithImageCell
+            cell.userLabel.text = user.username
+            cell.captionLabel.text = post["caption"] as? String
+//            cell.createdAtLabel.text = post["createdAt"] as? String
+            cell.photoView.af.setImage(withURL: url)
+            
+            return cell
+        }
+    }
+    
+    func isEqualImage(_ image: UIImage) -> Bool {
+        let imageHolder: UIImage = UIImage(named: "post-pet-img-holder")!
+        let stockImage = imageHolder.pngData()
+        let curImage = image.pngData()
+        
+        return stockImage == curImage
+        }
     
 
     /*
