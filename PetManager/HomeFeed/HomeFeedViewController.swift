@@ -48,7 +48,7 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidAppear(animated)
         let query = PFQuery(className:"Posts")
         query.includeKeys(["author","pet"]) // fetch actual object
-        query.limit = 10
+        query.limit = 20
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
