@@ -30,7 +30,7 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
 - [x] User can logout
 - [x] User can add pets
 - [x] User can post notes about their pets
-- [] User can view a feed of these posts 
+- [x] User can view a feed of these posts 
 - [] Co-owners can share the same workspace for their pets
 
 **Optional Nice-to-have Stories**
@@ -44,12 +44,17 @@ Meet your pets needs through this app! Owners (and friends) can join a workspace
 
 Here's a walkthrough of implemented user stories:
 
-# Sprint 1
-<img src='http://g.recordit.co/JXKz0O2705.gif' title='Sprint 1 walkthrough' width='' alt='Sprint 1 walkthrough' />
+# User can sign up
+<img src='http://g.recordit.co/HuqLpGqeCl.gif' title='sign-up' width='' alt='sign-up' />
 
-# Sprint 2
-<img src='http://g.recordit.co/Af5ZQYJzm6.gif' title='Sprint 2 walkthrough' width='' alt='Sprint 2 walkthrough' />
+# User can add pet
+<img src='http://g.recordit.co/9syf5FsPRq.gif' title='add-pet' width='' alt='add-pet' />
 
+# User can post to the home feed
+<img src='http://g.recordit.co/mYZ6bCT9xq.gif' title='home-feed' width='' alt='home-feed' />
+
+# User can post to the health feed
+<img src='http://g.recordit.co/Cy75SNLgS4.gif' title='health-feed' width='' alt='health-feed' />
 
 ### 2. Screen Archetypes
 
