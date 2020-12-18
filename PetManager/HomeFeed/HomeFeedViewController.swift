@@ -48,6 +48,7 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidAppear(animated)
         let query = PFQuery(className:"Posts")
         query.includeKeys(["author","pet"]) // fetch actual object
+        query.order(byDescending: "createdAt") // display most recent posts first
         query.limit = 20
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {

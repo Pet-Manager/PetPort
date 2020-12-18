@@ -35,7 +35,8 @@ class HealthFeedViewController: UIViewController, UICollectionViewDelegate, UICo
         let query = PFQuery(className:"Posts")
         query.includeKeys(["author","pet"]) // fetch actual object
         query.whereKey("isHealth", equalTo:true)
-        query.limit = 10
+        query.order(byDescending: "createdAt") // display most recent posts first
+        query.limit = 20
         query.findObjectsInBackground { (posts, error) in
             if posts != nil{
                 self.posts = posts!
