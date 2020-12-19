@@ -50,7 +50,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 100, height: 100)
-        let scaledImage = image.af_imageAspectScaled(toFit: size)
+        let scaledImage = image.af.imageAspectScaled(toFit: size)
         
         imageView.image = scaledImage
         
@@ -72,26 +72,16 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         pet["author"] = PFUser.current()!
         
         user.add(pet, forKey: "pets")
-       
         
         user.saveInBackground{(success, error) in
             if success {
                 //self.dismiss(animated: true, completion: nil)
-                print("success")
+                print("user success")
             } else{
-                print("error")
+                print("user error")
             }
         }
 
-        
-        pet.saveInBackground{(success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-                print("success")
-            } else{
-                print("error")
-            }
-        }
         
     }
 
