@@ -71,8 +71,9 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         pet["name"] = petNameField.text
         pet["author"] = PFUser.current()!
         
-        user.add(pet, forKey: "pets")
-       
+        // https://stackoverflow.com/questions/45602032/parse-adding-objects-not-working
+//        user.add(pet, forKey: "pets")
+       user["pets"] = pet
         
         user.saveInBackground{(success, error) in
             if success {
