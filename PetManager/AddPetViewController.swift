@@ -50,7 +50,7 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 100, height: 100)
-        let scaledImage = image.af_imageAspectScaled(toFit: size)
+        let scaledImage = image.af.imageAspectScaled(toFit: size)
         
         imageView.image = scaledImage
         
