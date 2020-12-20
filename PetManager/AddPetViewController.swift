@@ -75,8 +75,10 @@ class AddPetViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         user.saveInBackground{(success, error) in
             if success {
-                //self.dismiss(animated: true, completion: nil)
                 print("user success")
+//              self.dismiss(animated: true, completion: nil) // only call this if presenting modally
+                //https://stackoverflow.com/questions/43889269/how-to-dismiss-current-view-controller-while-segue-time-in-swift3
+                self.navigationController?.popViewController(animated: true)
             } else{
                 print("user error")
             }
