@@ -34,6 +34,10 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.layer.cornerRadius = 30.0
+//        collectionView.layer.borderWidth = 1.0
+        collectionView.clipsToBounds = true
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         tableView.delegate = self
@@ -117,7 +121,7 @@ class HomeFeedViewController: UIViewController, UICollectionViewDataSource, UICo
                 let urlString = petImage.url!
                 let url = URL(string: urlString)!
          
-                cell.petImage.af_setImage(withURL: url)
+                cell.petImage.af.setImage(withURL: url)
             } else {
                 print("file: failed")
             }

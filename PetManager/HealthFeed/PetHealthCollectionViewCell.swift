@@ -11,5 +11,8 @@ class PetHealthCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var petImage: UIImageView!
     @IBOutlet weak var petName: UILabel!
-    
+    override func layoutSubviews() {
+        petImage.layer.cornerRadius = petImage.bounds.height / 2
+        petImage.clipsToBounds = true
+    }
 }

@@ -155,7 +155,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 let urlString = petImage.url!
                 let url = URL(string: urlString)!
          
-                cell.petImage.af_setImage(withURL: url)
+                cell.petImage.af.setImage(withURL: url)
             } else {
                 print("file: failed")
             }
